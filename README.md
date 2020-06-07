@@ -1,3 +1,38 @@
+Basic class structures
+  Customer
+    #new
+      initializes with a name and age (FAILED - 1)
+    .all
+      is class method that returns the contents of @@all (FAILED - 2)
+  Waiter
+    #new
+      initializes with a name and years of experience (FAILED - 3)
+    .all
+      is class method that returns the contents of @@all (FAILED - 4)
+  Meal
+    #new
+      initializes with a waiter, a customer, a total and a tip (FAILED - 5)
+    .all
+      is class method that returns the contents of @@all (FAILED - 6)
+
+Object relationships
+  Customer
+    #new_meal
+      initializes a meal using the current Customer instance, a provided Waiter instance and a total and tip (FAILED - 7)
+    #meals
+      returns an Array of Meal instances associated with this customer (FAILED - 8)
+    #waiters
+      returns an Array of Waiter instances associated with this customer's meals (FAILED - 9)
+  Waiter
+    #new_meal
+      initializes a meal using the current Waiter instance, a provided Customer instance and a total and tip (FAILED - 10)
+    #meals
+      returns an Array of Meal instances associated with this waiter (FAILED - 11)
+    #best_tipper
+      returns the Customer instance associated with the meal that received the largest tip (FAILED - 12)
+
+
+
 # Ruby Object Relations: Has-Many-Through
 
 ## Objectives
